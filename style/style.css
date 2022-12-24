@@ -1,1 +1,10 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #091612;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Sofia", sans-serif;
+}/*# sourceMappingURL=style.css.map */
