@@ -57,3 +57,31 @@
     }
     render();
 })();
+
+function toggleText() {
+    const giftIdeas = [
+        "a bracelet",
+        "a necklace",
+        "abobus",
+        "earrings",
+        "a watch",
+        "perfume",
+        "a purse",
+        "candles",
+        "gel nail polish kit",
+        "a dress",
+        "a shirt",
+        "jeans",
+        "face masks",
+        "a yoga mat",
+        "a videogame",
+        "sports tickets",
+        "a hat",
+        "a phone case",
+        "coffee",
+        "iPhone",
+    ];
+
+    let randomGift = giftIdeas[Math.floor(Math.random() * giftIdeas.length)];
+    document.getElementById("gift").innerHTML = randomGift;
+}
