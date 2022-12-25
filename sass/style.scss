@@ -1,0 +1,162 @@
+$background: #091612;
+$base-rim: #9d2535;
+$base-dark: #5e1620;
+$glass: #ebeaf0;
+$glass-border: #d7d5e1;
+$green: #0f2620;
+$green1: #1a4237;
+$green2: #265f50;
+$green3: #317c69;
+$snow: #ffffff;
+$button: #5e1620;
+$button-text: #ebeaf0;
+$button-hover: #ebeaf0;
+$button-hover-text: #5e1620;
+
+body {
+    background-color: $background;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Sofia", sans-serif;
+}
+
+#canvas1,
+#canvas2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#canvas1 {
+    z-index: -11;
+}
+
+#canvas2 {
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.snowglobe {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: $glass;
+    border: 2px solid $glass-border;
+    z-index: -30;
+}
+
+.snowglobe:before {
+    position: absolute;
+    content: "";
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    background: $snow;
+}
+
+.snowglobe:after {
+    position: absolute;
+    content: "";
+    height: 280px;
+    width: 290px;
+    border-radius: 50%;
+    top: 17px;
+    background: $glass;
+}
+
+.base {
+    position: relative;
+    border-bottom: 50px solid $base-dark;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 242px;
+    margin-top: -60px;
+    z-index: -10;
+    align-self: center;
+}
+
+.base:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: -10px;
+    width: 262px;
+    height: 50px;
+    border-radius: 125px / 25px;
+    background: $base-dark;
+}
+
+.baseTop {
+    background-color: $snow;
+    width: 242px;
+    height: 40px;
+    border-radius: 125px / 20px;
+    margin-top: -72px;
+    box-sizing: border-box;
+    border-bottom: 8px solid $glass;
+    z-index: -10;
+    align-self: center;
+}
+
+.baseShadow {
+    position: absolute;
+    background-color: $base-rim;
+    width: 275px;
+    height: 60px;
+    border-radius: 130px / 30px;
+    top: 270px;
+    z-index: -40;
+    align-self: center;
+}
+
+.tree {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 70px solid $green3;
+    margin-top: 67px;
+    margin-left: -80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tree:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid $green2;
+}
+
+.tree4 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid $green1;
+    margin-top: 65px;
+    margin-left: -50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
