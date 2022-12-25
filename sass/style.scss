@@ -232,3 +232,19 @@ body {
     font-size: 25px;
     font-family: "Sofia", sans-serif;
 }
+
+.btn:hover {
+    border: $button-hover;
+    background: $button-hover;
+    color: $button-hover-text;
+}
+
+.gift-text {
+    position: absolute;
+    top: -140px;
+    display: none;
+    color: $snow;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
