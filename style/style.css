@@ -9,8 +9,8 @@ body {
   font-family: "Sofia", sans-serif;
 }
 
-#canvas1,
-#canvas2 {
+#c1,
+#c2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,11 +19,11 @@ body {
   border-radius: 50%;
 }
 
-#canvas1 {
+#c1 {
   z-index: -11;
 }
 
-#canvas2 {
+#c2 {
   z-index: 1000;
 }
 
@@ -145,7 +145,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.tree4::after {
+.tree4:after {
   position: absolute;
   content: "";
   width: 0;
@@ -168,7 +168,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.tr2:after {
+.tree2:after {
   position: absolute;
   content: "";
   width: 0;
@@ -211,7 +211,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  transition: all 0.4 ease;
+  transition: all 0.4s ease;
   transform: perspective(0) translate(-50%, -50%);
   border-radius: 50px;
   border: #5e1620;
