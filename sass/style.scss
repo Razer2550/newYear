@@ -214,3 +214,21 @@ body {
     border-bottom: 80px solid $green3;
 }
 
+.btn {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 55px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.4 ease;
+    transform: perspective(0) translate(-50%, -50%);
+    border-radius: 50px;
+    border: $button;
+    background: $button;
+    color: $button-text;
+    font-size: 25px;
+    font-family: "Sofia", sans-serif;
+}

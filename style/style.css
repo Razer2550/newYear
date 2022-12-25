@@ -197,4 +197,26 @@ body {
   height: 0;
   border-right: 20px solid transparent;
   border-bottom: 80px solid #317c69;
+}
+
+.btn {
+  position: absolute;
+  top: 410px;
+  left: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 55px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 0.4 ease;
+  transform: perspective(0) translate(-50%, -50%);
+  border-radius: 50px;
+  border: #5e1620;
+  background: #5e1620;
+  color: #ebeaf0;
+  font-size: 25px;
+  font-family: "Sofia", sans-serif;
 }/*# sourceMappingURL=style.css.map */
