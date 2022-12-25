@@ -160,3 +160,57 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.tree4::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid $green;
+}
+
+.tree2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid $green1;
+    margin-top: 67px;
+    margin-left: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tr2:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid $green;
+}
+
+.tree3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 80px solid $green2;
+    margin-top: 69px;
+    margin-left: -20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tree3:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 80px solid $green3;
+}
+
