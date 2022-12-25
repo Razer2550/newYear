@@ -84,4 +84,11 @@ function toggleText() {
 
     let randomGift = giftIdeas[Math.floor(Math.random() * giftIdeas.length)];
     document.getElementById("gift").innerHTML = randomGift;
+
+    var text = document.getElementById("gift");
+    if (text.style.display === "none") {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
 }
